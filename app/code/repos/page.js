@@ -14,6 +14,7 @@ const getRepos = async () => {
     const repos = await response.json()
     return repos;
 }
+
 const ReposPage = async () => {
     const repos = await getRepos()
     return (
